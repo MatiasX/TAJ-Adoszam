@@ -1,0 +1,54 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.taj-section,
+.adoszam-section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.input-group {
+    display: flex;
+}
+
+.taj-input,
+.adoszam-input {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    transition: background-color 0.2s;
+}
+
+.taj-input.active,
+.adoszam-input.active {
+    background-color: #ddd;
+}
+
+.taj-input.filled,
+.adoszam-input.filled {
+    background-color: #ffefc0;
+}
+
+.taj-input.error,
+.adoszam-input.error {
+    background-color: #ffcccc;
+}
+
+.taj-input.completed,
+.adoszam-input.completed {
+    background-color: #a7f3ba;
+}
