@@ -1,47 +1,52 @@
 <!DOCTYPE html>
-<html lang="hu">
-
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TAJ és Adószám ellenőrzés</title>
+    <title>Taj és Adószám ellenőrző</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <h1>Taj és Adószám ellenőrző</h1>
+
     <div class="container">
-        <h1>TAJ és Adószám ellenőrzés</h1>
-        <div class="taj-section">
-            <h2>TAJ szám</h2>
-            <div class="input-group">
-                <input type="text" class="taj-input" maxlength="1">
-                <input type="text" class="taj-input" maxlength="1">
-                <input type="text" class="taj-input" maxlength="1">
-                <input type="text" class="taj-input" maxlength="1">
-                <input type="text" class="taj-input" maxlength="1">
-                <input type="text" class="taj-input" maxlength="1">
-                <input type="text" class="taj-input" maxlength="1">
-                <input type="text" class="taj-input" maxlength="1">
-                <input type="text" class="taj-input" maxlength="1">
-            </div>
+        <h2>Szabályzat:</h2>
+        <p>Az alábbi űrlap segítségével ellenőrizheted a magyarországi TAJ és Adószám helyességét.</p>
+        <ul>
+            <li>A TAJ szám esetében 9 számot kell megadni. Csak számokat (0-9) fogad el.</li>
+            <li>Az Adószám esetében 10 számot kell megadni az "Adóazonosító jele:" mezőben. Csak számokat (0-9) fogad el.</li>
+            <li>Amennyiben hibás adatot adtál meg, a hibás mező piros színnel jelölve lesz.</li>
+            <li>Amennyiben minden mező helyes adatot tartalmaz, az egész számsor zöld színnel lesz jelölve.</li>
+        </ul>
+
+        <h2>TAJ ellenőrzés</h2>
+        <div class="taj-container">
+            <input class="taj-input" type="text" maxlength="1">
+            <input class="taj-input" type="text" maxlength="1">
+            <input class="taj-input" type="text" maxlength="1">
+            <input class="taj-input" type="text" maxlength="1">
+            <input class="taj-input" type="text" maxlength="1">
+            <input class="taj-input" type="text" maxlength="1">
+            <input class="taj-input" type="text" maxlength="1">
+            <input class="taj-input" type="text" maxlength="1">
+            <input class="taj-input" type="text" maxlength="1">
         </div>
-        <div class="adoszam-section">
-            <h2>Adószám (Adóazonosító jel)</h2>
-            <div class="input-group">
-                <input type="text" class="adoszam-input" maxlength="1">
-                <input type="text" class="adoszam-input" maxlength="1">
-                <input type="text" class="adoszam-input" maxlength="1">
-                <input type="text" class="adoszam-input" maxlength="1">
-                <input type="text" class="adoszam-input" maxlength="1">
-                <input type="text" class="adoszam-input" maxlength="1">
-                <input type="text" class="adoszam-input" maxlength="1">
-                <input type="text" class="adoszam-input" maxlength="1">
-                <input type="text" class="adoszam-input" maxlength="1">
-                <input type="text" class="adoszam-input" maxlength="1">
-            </div>
+
+        <h2>Adószám ellenőrzés</h2>
+        <div class="adoszam-container">
+            <span>Adóazonosító jele:</span>
+            <input class="adoszam-input" type="text" maxlength="1">
+            <input class="adoszam-input" type="text" maxlength="1">
+            <input class="adoszam-input" type="text" maxlength="1">
+            <input class="adoszam-input" type="text" maxlength="1">
+            <input class="adoszam-input" type="text" maxlength="1">
+            <input class="adoszam-input" type="text" maxlength="1">
+            <input class="adoszam-input" type="text" maxlength="1">
+            <input class="adoszam-input" type="text" maxlength="1">
+            <input class="adoszam-input" type="text" maxlength="1">
+            <input class="adoszam-input" type="text" maxlength="1">
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
-
 </html>
